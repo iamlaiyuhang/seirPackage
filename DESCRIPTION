@@ -1,0 +1,18 @@
+Package: seirPackage
+Type: Package
+Title: Epidemics SEIR Simulation Model
+Version: 0.1.0
+Authors@R: person("yuhang", "lai", email = "1197946355@qq.com", role = c("aut", "cre"))
+Maintainer: Author <tets@test.com>
+Description: Simulation of SEIR model of an epidemics.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.1
+Imports:
+  deSolve,
+  ggplot2,
+  svglite
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
