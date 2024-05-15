@@ -24,8 +24,8 @@ model <- function(t, y, param){
   outcome <- c(dSt, dEt, dI1t, dI1t, dRt)
   list(outcome)
 }
-  times <- seq(0, 156, by =1/7)
-  param <- c(mu = 0.00064, lamda = 0.1, beta = 5,gamma = 0.095, N = 1, epsilon = 0.1)
+  times <- seq(0, 52, by =1/7)
+  param <- c(mu = 0.00064, lamda = 0.1, beta = 5, gamma = 0.095, N = 1, epsilon = 0.1)
   init <- c(S = 0.8, E = 0.000032, I1 = 0.00003, I2 = 0.00002, R = 0.000082)
   result <- deSolve::ode(y = init, times = times, func = model, parms = param)
   result <- as.data.frame(result)
